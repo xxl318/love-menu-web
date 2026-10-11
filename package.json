@@ -1,0 +1,13 @@
+{
+  "name": "love-menu-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "情侣点菜 · 像素风网页版",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.6.1",
+    "web-push": "^3.6.7"
+  }
+}

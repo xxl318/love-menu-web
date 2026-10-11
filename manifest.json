@@ -1,0 +1,14 @@
+{
+  "name": "情侣点菜 LOVE MENU",
+  "short_name": "情侣点菜",
+  "description": "一方点菜，另一半接单做饭 💕",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF3E4",
+  "theme_color": "#FFF3E4",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

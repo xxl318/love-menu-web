@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF3E4">
+  <title>LOVE MENU · 情侣点菜</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fusion-pixel-12px-proportional-sc@5.2.5/index.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="icon-192.png" type="image/png">
+</head>
+<body>
+  <div id="local-banner" class="local-banner" style="display:none">
+    🕹️ 本地演示模式 · 数据只存在这台设备上，部署到 Vercel 并连接数据库后即可双人同步
+  </div>
+
+  <main id="app">
+    <section id="screen-home" class="screen"></section>
+    <section id="screen-menu" class="screen" hidden></section>
+    <section id="screen-cook" class="screen" hidden></section>
+    <section id="screen-history" class="screen" hidden></section>
+    <section id="screen-mine" class="screen" hidden></section>
+  </main>
+
+  <nav class="tabbar" id="tabbar">
+    <button class="tab active" data-tab="home"><span class="tab-icon" data-icon="home"></span>今日菜单</button>
+    <button class="tab" data-tab="menu"><span class="tab-icon" data-icon="menu"></span>点菜</button>
+    <button class="tab" data-tab="cook"><span class="tab-icon" data-icon="cook"></span>下厨房</button>
+    <button class="tab" data-tab="mine"><span class="tab-icon" data-icon="mine"></span>我的</button>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="sheet-mask" class="sheet-mask" hidden></div>
+  <input type="file" id="photo-input" accept="image/*" hidden onchange="App.onPhotoChange(this)">
+
+  <script src="dishes.js"></script>
+  <script src="recipes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
